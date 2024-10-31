@@ -2,7 +2,7 @@
 A palindrome number is a number that is same after reverse. 
 For example 121, 34543, 343, 131, 48984 are the palindrome numbers.
 */
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
     int n, m, rem, rev=0;
@@ -16,13 +16,7 @@ int main()
         rev = rev * 10 +rem;
         m = m / 10;
     }
-    if(n == rev)
-    {
-        printf("%d is a Palindrome",n);
-    }
-    else
-    {
-        printf("%d is not a Palindrome",n);
-    }
+    n == rev ? printf("%d is a Palindrome",n) : printf("%d is not a Palindrome",n);
+    
     return 0;
 }
